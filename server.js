@@ -4,9 +4,7 @@ const mongoose = require('mongoose');
 dotenv.config({ path: './config.env' });
 const DB = process.env.DB_CONNECTION_STRING.replace('<USERNAME>', process.env.DB_USER).replace('<PASSWORD>', process.env.DB_PASSWORD);
 //console.log(DB);
-mongoose.connect(DB, {
-    useNewUrlParser: true
-}).then(con => {
+mongoose.connect(DB,{}).then(con => {
     console.log('DB connect successfull');
 });
 
