@@ -1,0 +1,22 @@
+extends base
+
+block content
+  main.main
+    .card-container
+      each tour in tours
+        .card
+          .card__header
+            .card__picture
+              .card__picture-overlay &nbsp;
+              img.card__picture-img(src=`/img/tours/tour-1-cover.jpg`, alt=`abcd`)
+            h3.heading-tertirary
+              span= tour.artist_name
+
+          .card__details
+            h4.card__sub-heading= tour.video_quality
+            p.card__text= tour.video_desc
+            .card__data
+              a.btn.btn--green.btn--small(href=`${tour.video_url}`) Play 
+          .card__footer
+            p
+              span.card__footer-value= `Created by Sarthak`  
