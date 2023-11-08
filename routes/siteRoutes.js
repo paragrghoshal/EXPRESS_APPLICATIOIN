@@ -3,7 +3,7 @@ const siteController = require('./../controllers/siteController');
 
 
 const router = express.Router();
-router.param('id',siteController.checkID);
+//router.param('id',siteController.checkID);
 router
     .route('/')
     .get(siteController.getAllSites)
