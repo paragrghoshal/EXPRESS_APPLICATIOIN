@@ -13,6 +13,7 @@
     "nodemon": "^3.0.1"
   },
   "dependencies": {
+    "darkmode-js": "^1.5.7",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^8.0.0",

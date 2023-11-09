@@ -1071,12 +1071,18 @@ body {
 }
 
 .card-container {
-  max-width: 120rem;
+  max-width: 220rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 7rem;
 }
+/* .card-container-parag {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7rem;
+} */
 
 .card {
   border-radius: 3px;
